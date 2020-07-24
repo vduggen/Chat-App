@@ -1,23 +1,19 @@
 html, body {
-  background: #f5f3f7;
+  background: #f7f0f7;
   width: 100%;
   min-height: 100vh;
   height: auto;
   position: relative;
 }
-html svg, body svg {
+html #Esq_Effect_Desktop, html #Esq_Effect_Mobile, body #Esq_Effect_Desktop, body #Esq_Effect_Mobile {
   position: absolute;
-}
-html #svgEsq, html #Esq_Effect_Mobile, body #svgEsq, body #Esq_Effect_Mobile {
   left: 0;
   top: 0;
 }
-html #svgDir, html #Dir_Effect_Mobile, body #svgDir, body #Dir_Effect_Mobile {
+html #Dir_Effect_Desktop, html #Dir_Effect_Mobile, body #Dir_Effect_Desktop, body #Dir_Effect_Mobile {
+  position: absolute;
   right: 0;
   bottom: 0;
-}
-html #Esq_Effect_Mobile, html #Dir_Effect_Mobile, body #Esq_Effect_Mobile, body #Dir_Effect_Mobile {
-  position: absolute;
 }
 html main, body main {
   width: 100%;
@@ -284,10 +280,10 @@ html .attribution a:last-child, body .attribution a:last-child {
   html html, html body, body html, body body {
     padding: 2rem 0;
   }
-  html html #svgEsq, html html #svgDir, html body #svgEsq, html body #svgDir, body html #svgEsq, body html #svgDir, body body #svgEsq, body body #svgDir {
+  html html #Esq_Effect_Desktop, html html #Dir_Effect_Desktop, html body #Esq_Effect_Desktop, html body #Dir_Effect_Desktop, body html #Esq_Effect_Desktop, body html #Dir_Effect_Desktop, body body #Esq_Effect_Desktop, body body #Dir_Effect_Desktop {
     display: none;
   }
-  html html #svgEsqM, html html #svgDirM, html body #svgEsqM, html body #svgDirM, body html #svgEsqM, body html #svgDirM, body body #svgEsqM, body body #svgDirM {
+  html html #Esq_Effect_Mobile, html html #Dir_Effect_Mobile, html body #Esq_Effect_Mobile, html body #Dir_Effect_Mobile, body html #Esq_Effect_Mobile, body html #Dir_Effect_Mobile, body body #Esq_Effect_Mobile, body body #Dir_Effect_Mobile {
     display: block;
   }
   html html main, html body main, body html main, body body main {
@@ -306,13 +302,26 @@ html .attribution a:last-child, body .attribution a:last-child {
   html html main .column:nth-child(2) p, html body main .column:nth-child(2) p, body html main .column:nth-child(2) p, body body main .column:nth-child(2) p {
     text-align: center;
     padding: 0 1rem;
+    max-width: 425px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
+  html html #Esq_Effect_Desktop, html body #Esq_Effect_Desktop, body html #Esq_Effect_Desktop, body body #Esq_Effect_Desktop {
+    display: block;
+    top: -14%;
+  }
+  html html #Dir_Effect_Desktop, html body #Dir_Effect_Desktop, body html #Dir_Effect_Desktop, body body #Dir_Effect_Desktop {
+    display: block;
+  }
+  html html #Esq_Effect_Mobile, html html #Dir_Effect_Mobile, html body #Esq_Effect_Mobile, html body #Dir_Effect_Mobile, body html #Esq_Effect_Mobile, body html #Dir_Effect_Mobile, body body #Esq_Effect_Mobile, body body #Dir_Effect_Mobile {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
   html html, html body, body html, body body {
     padding: 0;
   }
-  html html #svgEsq, html html #svgDir, html body #svgEsq, html body #svgDir, body html #svgEsq, body html #svgDir, body body #svgEsq, body body #svgDir {
+  html html #Esq_Effect_Desktop, html html #Dir_Effect_Desktop, html body #Esq_Effect_Desktop, html body #Dir_Effect_Desktop, body html #Esq_Effect_Desktop, body html #Dir_Effect_Desktop, body body #Esq_Effect_Desktop, body body #Dir_Effect_Desktop {
     display: block;
   }
   html html #Esq_Effect_Mobile, html html #Dir_Effect_Mobile, html body #Esq_Effect_Mobile, html body #Dir_Effect_Mobile, body html #Esq_Effect_Mobile, body html #Dir_Effect_Mobile, body body #Esq_Effect_Mobile, body body #Dir_Effect_Mobile {
@@ -334,6 +343,11 @@ html .attribution a:last-child, body .attribution a:last-child {
     text-align: left;
     padding: 0;
     width: 430px;
+  }
+}
+@media (min-width: 1440px) {
+  html html #Esq_Effect_Desktop, html html #Dir_Effect_Desktop, html html #Esq_Effect_Mobile, html html #Dir_Effect_Mobile, html body #Esq_Effect_Desktop, html body #Dir_Effect_Desktop, html body #Esq_Effect_Mobile, html body #Dir_Effect_Mobile, body html #Esq_Effect_Desktop, body html #Dir_Effect_Desktop, body html #Esq_Effect_Mobile, body html #Dir_Effect_Mobile, body body #Esq_Effect_Desktop, body body #Dir_Effect_Desktop, body body #Esq_Effect_Mobile, body body #Dir_Effect_Mobile {
+    display: none;
   }
 }
 

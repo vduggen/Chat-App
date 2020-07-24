@@ -2,29 +2,23 @@
 @import './variables';
 
 html,body {
-  background: $bg;
+  background: #f7f0f7;
   width: 100%;  
   min-height:100vh;
   height:auto;
 
   position: relative;
 
-  svg {
+  #Esq_Effect_Desktop, #Esq_Effect_Mobile {
     position: absolute;
-  }
-
-  #svgEsq, #Esq_Effect_Mobile {
     left:0;
     top: 0;
   }
 
-  #svgDir, #Dir_Effect_Mobile {
+  #Dir_Effect_Desktop, #Dir_Effect_Mobile {
+    position: absolute;
     right:0;
     bottom: 0;
-  }
-
-  #Esq_Effect_Mobile, #Dir_Effect_Mobile {
-    position: absolute;
   }
 
   main {
@@ -357,11 +351,11 @@ html,body {
     html,body {
       padding:2rem 0;
 
-      #svgEsq, #svgDir {
+      #Esq_Effect_Desktop, #Dir_Effect_Desktop {
         display:none;
       }
 
-      #svgEsqM, #svgDirM {
+      #Esq_Effect_Mobile, #Dir_Effect_Mobile {
         display:block;
       }
 
@@ -384,6 +378,7 @@ html,body {
             p {
               text-align:center;
               padding:0 1rem;
+              max-width: 425px;
             }
           }
         }
@@ -391,16 +386,33 @@ html,body {
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 576px) {
     html,body {
-      padding:0;
+      #Esq_Effect_Desktop {
+        display:block;
+        top:-14%;
+      }
 
-      #svgEsq, #svgDir {
+      #Dir_Effect_Desktop {
         display:block;
       }
 
       #Esq_Effect_Mobile, #Dir_Effect_Mobile {
-        display: none;
+        display:none;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    html,body {
+      padding:0;
+
+      #Esq_Effect_Desktop, #Dir_Effect_Desktop {
+        display:block;
+      }
+
+      #Esq_Effect_Mobile, #Dir_Effect_Mobile {
+        display:none;
       }
 
       main {
@@ -425,6 +437,14 @@ html,body {
             }
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    html,body {
+      #Esq_Effect_Desktop, #Dir_Effect_Desktop, #Esq_Effect_Mobile, #Dir_Effect_Mobile {
+        display:none;
       }
     }
   }
