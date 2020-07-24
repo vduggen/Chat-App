@@ -11,10 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
 
   <!-- Local Imports -->
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/reset.css">
 </head>
 <body>
+  <svg id="svgEsq" width="372" height="618" viewBox="0 0 372 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M372 463.269V0H0V564.651C9.16068 573.78 28.2914 587.186 51.3103 597.71C72.7509 607.512 97.6956 614.696 117.66 616.664C137.089 618.579 164.276 619.114 191.971 613.578C221.655 607.645 252.367 594.864 275.13 577.434C317.151 545.256 361.237 492.214 372 463.269Z" fill="url(#paint0_linear)"/>
+    <defs>
+    <linearGradient id="paint0_linear" x1="441.888" y1="16.75" x2="1.87544" y2="567.032" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#E942FF"/>
+    <stop offset="1" stop-color="#8838FF"/>
+    </linearGradient>
+    </defs>
+  </svg>   
+
+  <svg id="svgDir" width="329" height="618" viewBox="0 0 329 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.00515515 230.247V618H328.505V9.51884C302.172 0.871767 235.505 -6.66921 182.005 9.51884C35.2052 53.9375 -0.494845 175.179 0.00515515 230.247Z" fill="#F7F5FA"/>
+  </svg>   
+
+  <img id="Esq_Effect_Mobile" src="./images/backgroundEffect1.svg" alt="background Effect">
+
+  <img id="Dir_Effect_Mobile" src="./images/backgroundEffect2.svg" alt="background Effect">
+    
   <main>
     <section class="column">
       <div id="celular">
@@ -37,14 +55,14 @@
 
         <section id="body">
           <div class="baloonLeft baloon1">
-            <p>
+            <p class="baloonPurple">
               That sounds great. I'd be <br />
               happy with that.
             </p>
           </div>
 
           <div class="baloonLeft baloon2">
-            <p>
+            <p class="baloonPurple">
               Could you send over some <br />
               pictures of your dog. please?
             </p>
@@ -70,7 +88,7 @@
           </div>
 
           <div class="baloonLeft baloon6">
-            <p>
+            <p class="baloonPurple">
               She looks so happy! The time <br />
               we discussed works. How <br />
               long shall I take her out for?
@@ -79,12 +97,39 @@
 
           <div class="baloonLeft baloon7">
             <span></span>
-            <p>
-              30 minute walk 
-            </p>
-            <p>
-              $29
-            </p>
+
+            <div id="text">
+              <p>
+                30 minute walk 
+              </p>
+              
+              <p>
+                $29
+              </p>
+            </div>
+          </div>
+
+          <div class="baloonLeft baloon8">
+            <span></span>
+
+            <div id="text">
+              <p>
+                1 hour walk 
+              </p>
+              
+              <p>
+                $49
+              </p>
+            </div>
+          </div>
+
+          <div id="inputMessage">
+            <div id="input">
+              <p>Type a message...</p>
+              <button>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
         </section>
       </div>
@@ -93,9 +138,9 @@
     <section class="column">
       <h1>Simple booking</h1>
       <p>
-        Stay in touch with our dog walkers through the cat <br />
-        interface. This makes it easy to discuss arrangements and <br />
-        make bookings. Once the walk has been completed you can <br />
+        Stay in touch with our dog walkers through the cat 
+        interface. This makes it easy to discuss arrangements and 
+        make bookings. Once the walk has been completed you can 
         rate your walker and book again all through the cat.
       </p>
     </section>
@@ -104,7 +149,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">zlotyss</a>.
+    Coded by <a href="https://github.com/vduggen">zlotyss</a>.
   </div>
 
   <!-- CDN Imports -->
