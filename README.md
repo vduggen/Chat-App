@@ -22,9 +22,8 @@
    * [Licença](#licença)
    
 <h2 id="Sobre">Sobre o Projeto</h2>
-Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros.
-Vivamus sit amet nibh non tellus tristique interdum. Diuretics paradis num copo é motivis de denguis.
-Quem num gosta di mim que vai caçá sua turmis! Si num tem leite então bota uma pinga aí cumpadi! 
+O objetivo do desafio é chegar mais próximo o possivel do design proposto pelo desafio no <a href="https://www.frontendmentor.io/">Frontend Mentor</a> <br />
+projeto feito para fixar os conhecimentos e melhorar as habilidades com desenvolvimento web.
 
 <h2 id="como-usar">Como Utilizar</h2>
 
