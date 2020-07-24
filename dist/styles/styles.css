@@ -269,6 +269,7 @@ html .attribution, body .attribution {
   align-items: center;
   justify-content: center;
   font-family: "Rubik", sans-serif;
+  z-index:1;
 }
 html .attribution a:first-child, body .attribution a:first-child {
   margin-left: 0.3rem;
