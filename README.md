@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./dist/images/logo.svg" align="center" width="450" alt="Logo projeto">
+  <img src="./dist/images/logo.svg" align="center" width="150" alt="Logo projeto">
 </p>
 
 <h1 align="center" style="border-bottom:none">Chat App</h1>
