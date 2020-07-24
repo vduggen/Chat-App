@@ -2,7 +2,6 @@
   <img src="./dist/images/logo.svg" align="center" width="150" alt="Logo projeto">
 </p>
 
-<h1 align="center" style="border-bottom:none">Chat App</h1>
 <p align="center">
   Desafio de reproduzir um site com um Chat App.
 </p>
@@ -17,8 +16,6 @@
 
 ## Tabela de conteúdos
    * [Sobre](#Sobre)
-   * [Features](#Features)
-   * [Pré Requisitos](#pre-requisitos)    
    * [Como usar](#como-usar)
    * [Tecnologias](#tecnologias)
    * [Como Contribuir](#contribuir)
